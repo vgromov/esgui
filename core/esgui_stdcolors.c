@@ -1,0 +1,26 @@
+#include <esgui/include/esgui.h>
+#pragma hdrstop
+
+#if defined(ESGUI_USE_STD_COLORS) && (0 != ESGUI_USE_STD_COLORS)
+
+# if (ESGUI_USE_STD_COLORS & ESGUI_USE_STD_COLORS_MONO)
+DEF_ESGUI_COLOR_CONST(c_clBlack, 0,0,0);
+DEF_ESGUI_COLOR_CONST(c_clWhite, 255,255,255);
+# endif
+
+# if (ESGUI_USE_STD_COLORS & ESGUI_USE_STD_COLORS_BASIC_MIN)
+DEF_ESGUI_COLOR_CONST(c_clDarkGrey, 64,64,64);
+DEF_ESGUI_COLOR_CONST(c_clLightGrey, 128,128,128);
+DEF_ESGUI_COLOR_CONST(c_clDarkRed, 128,0,0);
+DEF_ESGUI_COLOR_CONST(c_clLightRed, 255,0,0);
+DEF_ESGUI_COLOR_CONST(c_clDarkGreen, 0,128,0);
+DEF_ESGUI_COLOR_CONST(c_clLightGreen, 0,255,0);
+DEF_ESGUI_COLOR_CONST(c_clDarkBlue, 0,0,128);
+DEF_ESGUI_COLOR_CONST(c_clLightBlue, 0,0,255);
+DEF_ESGUI_COLOR_CONST(c_clDarkYellow, 128,128,0);
+DEF_ESGUI_COLOR_CONST(c_clLightYellow, 255,255,0);
+DEF_ESGUI_COLOR_CONST(c_clMagenta, 255,0,255);
+# endif
+
+#endif
+
